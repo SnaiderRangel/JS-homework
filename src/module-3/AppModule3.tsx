@@ -1,5 +1,6 @@
 import type { ComponentType } from 'react'
 import FetchComponent from './components/FetchComponent'
+import ResizeComponent from './components/ResizeComponent'
 import TimerComponent from './components/TimerComponent'
 import './styles.css'
 
@@ -13,6 +14,7 @@ interface HookTask {
 const reactHooks: HookTask[] = [
   { id: 'timer', title: 'useEffect - Timer', Component: TimerComponent },
   { id: 'fetch', title: 'useEffect - Fetch', Component: FetchComponent },
+  { id: 'resize', title: 'useEffect - Resize', Component: ResizeComponent },
 ]
 
 function AppModule3() {
