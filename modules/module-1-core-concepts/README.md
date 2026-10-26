@@ -10,7 +10,9 @@ A React component that renders a list of items, where each item is rendered by i
 
 ## Running locally
 
+From the repo root:
+
 ```bash
 npm install
-npm run dev
+npm run dev:m1
 ```
