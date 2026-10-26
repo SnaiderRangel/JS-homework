@@ -1,10 +1,19 @@
-import ItemListTask from './tasks/module-1/task-1-item-list'
+import { Route, Routes } from 'react-router'
+import Home from './pages/Home'
+import NotFound from './pages/NotFound'
+import TaskPage from './pages/TaskPage'
+import { tasks } from './tasks'
 
 function App() {
   return (
     <main className="app">
-      <h1>Module 1: Core Concepts</h1>
-      <ItemListTask />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        {tasks.map((task) => (
+          <Route key={task.path} path={task.path} element={<TaskPage task={task} />} />
+        ))}
+        <Route path="*" element={<NotFound />} />
+      </Routes>
     </main>
   )
 }
