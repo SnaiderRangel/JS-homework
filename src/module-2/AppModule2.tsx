@@ -1,4 +1,5 @@
 import ItemListClass from './components/ItemListClass'
+import ItemListFunctional from './components/ItemListFunctional'
 import { items } from './data/items'
 import './styles.css'
 
@@ -8,6 +9,11 @@ function AppModule2() {
       <section className="task">
         <h2 className="task__title">Task 1 - React class component</h2>
         <ItemListClass items={items} />
+      </section>
+
+      <section className="task">
+        <h2 className="task__title">Task 2 - React functional component</h2>
+        <ItemListFunctional items={items} />
       </section>
     </div>
   )
