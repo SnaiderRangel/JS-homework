@@ -3,6 +3,7 @@ import AccordionComponent from './components/AccordionComponent'
 import DropDownComponent from './components/DropDownComponent'
 import FetchComponent from './components/FetchComponent'
 import ResizeComponent from './components/ResizeComponent'
+import ScrollComponent from './components/ScrollComponent'
 import ThemeComponent from './components/theme/ThemeComponent'
 import TimerComponent from './components/TimerComponent'
 import ToDoComponent from './components/todo/ToDoComponent'
@@ -23,6 +24,7 @@ const reactHooks: HookTask[] = [
   { id: 'todo', title: 'useReducer - TodoList', Component: ToDoComponent },
   { id: 'dropdown', title: 'useOutsideClick - Dropdown', Component: DropDownComponent },
   { id: 'accordion', title: 'useKeyBoardPress - Accordion', Component: AccordionComponent },
+  { id: 'scroll', title: 'useScrollPosition - Scroll', Component: ScrollComponent },
 ]
 
 function AppModule3() {
