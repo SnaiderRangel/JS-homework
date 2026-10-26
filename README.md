@@ -1,6 +1,6 @@
 # JS-homework
 
-Home tasks for the EPAM React program, all in a single Vite + React app. The home page lists every task, and clicking one opens it.
+Home tasks for the EPAM React Global Program, in a single Vite + React + TypeScript app.
 
 ## Getting started
 
@@ -9,34 +9,36 @@ npm install
 npm run dev
 ```
 
-Then open http://localhost:5173.
+Open http://localhost:5173 and pick a module from the dropdown in the top-right corner.
 
 ## Structure
 
 ```
 src/
-  pages/            home page, task page and 404
-  tasks/
-    index.js        list of all tasks (register new ones here)
-    module-1/
-      task-1-item-list/
+  App.tsx           layout and selected module
+  components/       shared components (header)
+  modules.ts        list of modules shown in the selector
+  module-1/
+    AppModule1.tsx  entry point for module 1
+  module-2/
+    AppModule2.tsx  entry point for module 2
 ```
 
-Each task lives in its own folder with its components, data, styles and a README describing it.
+Each module folder has its own components, data, styles and a README with the task description.
 
-## Adding a new task
+## Adding a new module
 
-1. Create a folder under `src/tasks/module-N/task-N-name/` with an `index.jsx` that exports the task component.
-2. Add an entry to `src/tasks/index.js` with its path, module, title and description.
+1. Create `src/module-N/AppModuleN.tsx`.
+2. Register it in `src/modules.ts`.
 
-## Tasks
+## Modules
 
-| Module | Task | Route |
-| --- | --- | --- |
-| 1. Core Concepts | Item list with composition | `/module-1/task-1` |
+| Module | Topic |
+| --- | --- |
+| 1 | Core Concepts |
 
 ## Scripts
 
 - `npm run dev` - start the dev server
-- `npm run build` - production build
+- `npm run build` - type check and production build
 - `npm run lint` - lint the source code
