@@ -1,14 +1,13 @@
 {
   "name": "js-homework",
   "private": true,
+  "version": "0.0.0",
   "type": "module",
-  "workspaces": [
-    "modules/*"
-  ],
   "scripts": {
-    "dev:m1": "npm run dev -w module-1-core-concepts",
-    "build": "npm run build --workspaces --if-present",
-    "lint": "oxlint modules"
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "oxlint src",
+    "preview": "vite preview"
   },
   "dependencies": {
     "react": "^19.3.1",

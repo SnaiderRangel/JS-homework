@@ -1,11 +1,10 @@
-import ItemList from './components/ItemList'
-import { items } from './data/items'
+import ItemListTask from './tasks/module-1/task-1-item-list'
 
 function App() {
   return (
     <main className="app">
       <h1>Module 1: Core Concepts</h1>
-      <ItemList items={items} />
+      <ItemListTask />
     </main>
   )
 }
