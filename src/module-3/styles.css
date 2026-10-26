@@ -83,3 +83,31 @@
 .dropdown__item:hover {
   background: #f3f4f6;
 }
+
+.accordion {
+  max-width: 480px;
+}
+
+.module-3 .accordion__header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  text-align: left;
+}
+
+.accordion__content {
+  padding: 0 0.75rem;
+  border: 1px solid #e5e7eb;
+  border-top: none;
+  border-radius: 0 0 6px 6px;
+  background: #fff;
+}
+
+.module-3 .hint {
+  font-size: 0.85rem;
+  color: #6b7280;
+}

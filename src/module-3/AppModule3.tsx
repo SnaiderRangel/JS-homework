@@ -1,4 +1,5 @@
 import type { ComponentType } from 'react'
+import AccordionComponent from './components/AccordionComponent'
 import DropDownComponent from './components/DropDownComponent'
 import FetchComponent from './components/FetchComponent'
 import ResizeComponent from './components/ResizeComponent'
@@ -21,6 +22,7 @@ const reactHooks: HookTask[] = [
   { id: 'theme', title: 'useContext - Theme', Component: ThemeComponent },
   { id: 'todo', title: 'useReducer - TodoList', Component: ToDoComponent },
   { id: 'dropdown', title: 'useOutsideClick - Dropdown', Component: DropDownComponent },
+  { id: 'accordion', title: 'useKeyBoardPress - Accordion', Component: AccordionComponent },
 ]
 
 function AppModule3() {
