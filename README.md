@@ -1,29 +1,42 @@
 # JS-homework
 
-Home tasks for the EPAM React program. Each module lives in its own folder under `modules/` and is a small Vite + React app.
-
-## Structure
-
-```
-modules/
-  module-1-core-concepts/
-package.json   <- shared dependencies (React, Vite, oxlint)
-```
-
-The repo uses [npm workspaces](https://docs.npmjs.com/cli/using-npm/workspaces), so dependencies are installed once at the root and shared by every module.
+Home tasks for the EPAM React program, all in a single Vite + React app. The home page lists every task, and clicking one opens it.
 
 ## Getting started
 
 ```bash
 npm install
-npm run dev:m1
+npm run dev
 ```
 
-| Module | Topic | Run |
+Then open http://localhost:5173.
+
+## Structure
+
+```
+src/
+  pages/            home page, task page and 404
+  tasks/
+    index.js        list of all tasks (register new ones here)
+    module-1/
+      task-1-item-list/
+```
+
+Each task lives in its own folder with its components, data, styles and a README describing it.
+
+## Adding a new task
+
+1. Create a folder under `src/tasks/module-N/task-N-name/` with an `index.jsx` that exports the task component.
+2. Add an entry to `src/tasks/index.js` with its path, module, title and description.
+
+## Tasks
+
+| Module | Task | Route |
 | --- | --- | --- |
-| 1 | Core Concepts | `npm run dev:m1` |
+| 1. Core Concepts | Item list with composition | `/module-1/task-1` |
 
-Other useful scripts:
+## Scripts
 
-- `npm run build` - builds every module
-- `npm run lint` - lints all modules
+- `npm run dev` - start the dev server
+- `npm run build` - production build
+- `npm run lint` - lint the source code
