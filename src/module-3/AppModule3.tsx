@@ -3,6 +3,7 @@ import FetchComponent from './components/FetchComponent'
 import ResizeComponent from './components/ResizeComponent'
 import ThemeComponent from './components/theme/ThemeComponent'
 import TimerComponent from './components/TimerComponent'
+import ToDoComponent from './components/todo/ToDoComponent'
 import './styles.css'
 
 interface HookTask {
@@ -17,6 +18,7 @@ const reactHooks: HookTask[] = [
   { id: 'fetch', title: 'useEffect - Fetch', Component: FetchComponent },
   { id: 'resize', title: 'useEffect - Resize', Component: ResizeComponent },
   { id: 'theme', title: 'useContext - Theme', Component: ThemeComponent },
+  { id: 'todo', title: 'useReducer - TodoList', Component: ToDoComponent },
 ]
 
 function AppModule3() {
