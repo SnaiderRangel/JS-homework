@@ -1,4 +1,5 @@
 import { useState, type ComponentType } from 'react'
+import NativeForm from './components/NativeForm'
 import type { FormProps, FormSubmitDataType } from './forms/types'
 import './styles.css'
 
@@ -9,7 +10,9 @@ interface FormTask {
 }
 
 // Each form task is rendered in its own section
-const reactForms: FormTask[] = []
+const reactForms: FormTask[] = [
+  { id: 'native', title: 'Task 1. Native React form', Component: NativeForm },
+]
 
 function FormTaskSection({ title, Component }: Omit<FormTask, 'id'>) {
   const [submittedData, setSubmittedData] = useState<FormSubmitDataType | null>(null)
