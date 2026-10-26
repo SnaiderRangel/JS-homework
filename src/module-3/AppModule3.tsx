@@ -1,4 +1,5 @@
 import type { ComponentType } from 'react'
+import DropDownComponent from './components/DropDownComponent'
 import FetchComponent from './components/FetchComponent'
 import ResizeComponent from './components/ResizeComponent'
 import ThemeComponent from './components/theme/ThemeComponent'
@@ -19,6 +20,7 @@ const reactHooks: HookTask[] = [
   { id: 'resize', title: 'useEffect - Resize', Component: ResizeComponent },
   { id: 'theme', title: 'useContext - Theme', Component: ThemeComponent },
   { id: 'todo', title: 'useReducer - TodoList', Component: ToDoComponent },
+  { id: 'dropdown', title: 'useOutsideClick - Dropdown', Component: DropDownComponent },
 ]
 
 function AppModule3() {
