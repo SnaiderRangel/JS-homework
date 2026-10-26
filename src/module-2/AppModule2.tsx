@@ -1,7 +1,16 @@
+import ItemListClass from './components/ItemListClass'
+import { items } from './data/items'
 import './styles.css'
 
 function AppModule2() {
-  return <div className="module-2"></div>
+  return (
+    <div className="module-2">
+      <section className="task">
+        <h2 className="task__title">Task 1 - React class component</h2>
+        <ItemListClass items={items} />
+      </section>
+    </div>
+  )
 }
 
 export default AppModule2
