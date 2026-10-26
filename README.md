@@ -37,6 +37,7 @@ Each module folder has its own components, data, styles and a README with the ta
 | --- | --- |
 | 1 | Core Concepts |
 | 2 | React components |
+| 3 | React hooks |
 
 ## Scripts
 
