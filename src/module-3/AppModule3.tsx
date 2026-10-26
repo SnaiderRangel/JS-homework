@@ -1,4 +1,5 @@
 import type { ComponentType } from 'react'
+import TimerComponent from './components/TimerComponent'
 import './styles.css'
 
 interface HookTask {
@@ -8,7 +9,9 @@ interface HookTask {
 }
 
 // Each hook task is rendered in its own section
-const reactHooks: HookTask[] = []
+const reactHooks: HookTask[] = [
+  { id: 'timer', title: 'useEffect - Timer', Component: TimerComponent },
+]
 
 function AppModule3() {
   return (
