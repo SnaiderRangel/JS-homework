@@ -23,4 +23,9 @@ export const modules: Module[] = [
     label: 'Module - 3',
     Component: lazy(() => import('./module-3/AppModule3')),
   },
+  {
+    id: 'module-4',
+    label: 'Module - 4',
+    Component: lazy(() => import('./module-4/AppModule4')),
+  },
 ]
