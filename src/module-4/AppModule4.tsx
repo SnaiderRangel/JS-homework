@@ -1,5 +1,6 @@
 import { useState, type ComponentType } from 'react'
 import NativeForm from './components/NativeForm'
+import ReactHookForm from './components/ReactHookForm'
 import type { FormProps, FormSubmitDataType } from './forms/types'
 import './styles.css'
 
@@ -12,6 +13,7 @@ interface FormTask {
 // Each form task is rendered in its own section
 const reactForms: FormTask[] = [
   { id: 'native', title: 'Task 1. Native React form', Component: NativeForm },
+  { id: 'react-hook-form', title: 'Task 2. React Hook Form', Component: ReactHookForm },
 ]
 
 function FormTaskSection({ title, Component }: Omit<FormTask, 'id'>) {
