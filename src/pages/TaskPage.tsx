@@ -1,7 +1,8 @@
 import { Suspense } from 'react'
 import { Link } from 'react-router'
+import type { Task } from '../tasks'
 
-function TaskPage({ task }) {
+function TaskPage({ task }: { task: Task }) {
   const { Component } = task
 
   return (

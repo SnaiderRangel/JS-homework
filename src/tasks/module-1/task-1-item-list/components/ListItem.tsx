@@ -1,11 +1,15 @@
-function formatPrice(price) {
+import type { Item } from '../data/items'
+
+type ListItemProps = Omit<Item, 'id'>
+
+function formatPrice(price: number) {
   return new Intl.NumberFormat('en-US', {
     style: 'currency',
     currency: 'USD',
   }).format(price)
 }
 
-function ListItem({ name, description, category, price }) {
+function ListItem({ name, description, category, price }: ListItemProps) {
   return (
     <li className="list-item">
       <div className="list-item__header">

@@ -1,6 +1,11 @@
+import type { Item } from '../data/items'
 import ListItem from './ListItem'
 
-function ItemList({ items }) {
+interface ItemListProps {
+  items: Item[]
+}
+
+function ItemList({ items }: ItemListProps) {
   if (items.length === 0) {
     return <p className="item-list__empty">No items to display.</p>
   }

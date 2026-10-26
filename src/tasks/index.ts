@@ -1,7 +1,16 @@
-import { lazy } from 'react'
+import { lazy, type ComponentType, type LazyExoticComponent } from 'react'
+
+export interface Task {
+  path: string
+  module: number
+  moduleTitle: string
+  title: string
+  description: string
+  Component: LazyExoticComponent<ComponentType>
+}
 
 // Register every new task here so it shows up on the home page
-export const tasks = [
+export const tasks: Task[] = [
   {
     path: 'module-1/task-1',
     module: 1,

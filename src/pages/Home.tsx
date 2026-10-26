@@ -1,7 +1,12 @@
 import { Link } from 'react-router'
-import { tasks } from '../tasks'
+import { tasks, type Task } from '../tasks'
 
-function groupByModule(taskList) {
+interface ModuleGroup {
+  title: string
+  tasks: Task[]
+}
+
+function groupByModule(taskList: Task[]) {
   return taskList.reduce((groups, task) => {
     const key = task.module
     if (!groups[key]) {
@@ -9,7 +14,7 @@ function groupByModule(taskList) {
     }
     groups[key].tasks.push(task)
     return groups
-  }, {})
+  }, {} as Record<number, ModuleGroup>)
 }
 
 function Home() {

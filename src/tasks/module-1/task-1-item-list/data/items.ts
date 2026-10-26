@@ -1,4 +1,12 @@
-export const items = [
+export interface Item {
+  id: number
+  name: string
+  description: string
+  category: string
+  price: number
+}
+
+export const items: Item[] = [
   {
     id: 1,
     name: 'Wireless Headphones',
