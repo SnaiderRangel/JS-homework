@@ -1,4 +1,5 @@
 import { useState, type ComponentType } from 'react'
+import FormikForm from './components/FormikForm'
 import NativeForm from './components/NativeForm'
 import ReactHookForm from './components/ReactHookForm'
 import type { FormProps, FormSubmitDataType } from './forms/types'
@@ -14,6 +15,7 @@ interface FormTask {
 const reactForms: FormTask[] = [
   { id: 'native', title: 'Task 1. Native React form', Component: NativeForm },
   { id: 'react-hook-form', title: 'Task 2. React Hook Form', Component: ReactHookForm },
+  { id: 'formik', title: 'Task 3. Formik', Component: FormikForm },
 ]
 
 function FormTaskSection({ title, Component }: Omit<FormTask, 'id'>) {
