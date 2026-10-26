@@ -26,3 +26,13 @@
 .module-3 .error {
   color: #b91c1c;
 }
+
+.theme-box {
+  padding: 1rem 1.25rem;
+  border-radius: 8px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.theme-box h3 {
+  margin-top: 0;
+}
