@@ -1,0 +1,24 @@
+.module-3 .task {
+  margin-top: 2rem;
+}
+
+.module-3 input {
+  font: inherit;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid #9ca3af;
+  border-radius: 4px;
+}
+
+.module-3 button {
+  font: inherit;
+  cursor: pointer;
+}
+
+.module-3 button + button,
+.module-3 input + button {
+  margin-left: 0.25rem;
+}
+
+.module-3 button:disabled {
+  cursor: not-allowed;
+}
