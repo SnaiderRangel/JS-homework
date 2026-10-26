@@ -12,3 +12,62 @@
 body {
   margin: 0;
 }
+
+.app {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.app h1 {
+  margin-bottom: 1.5rem;
+}
+
+.item-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 1rem;
+}
+
+.item-list__empty {
+  color: #6b7280;
+}
+
+.list-item {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+}
+
+.list-item__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.list-item__name {
+  margin: 0;
+  font-size: 1.125rem;
+}
+
+.list-item__category {
+  font-size: 0.75rem;
+  background: #e0e7ff;
+  color: #3730a3;
+  padding: 0.125rem 0.5rem;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.list-item__description {
+  margin: 0.5rem 0;
+  color: #4b5563;
+}
+
+.list-item__price {
+  font-weight: 600;
+}
