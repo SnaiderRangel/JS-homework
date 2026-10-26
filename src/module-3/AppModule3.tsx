@@ -1,4 +1,5 @@
 import type { ComponentType } from 'react'
+import FetchComponent from './components/FetchComponent'
 import TimerComponent from './components/TimerComponent'
 import './styles.css'
 
@@ -11,6 +12,7 @@ interface HookTask {
 // Each hook task is rendered in its own section
 const reactHooks: HookTask[] = [
   { id: 'timer', title: 'useEffect - Timer', Component: TimerComponent },
+  { id: 'fetch', title: 'useEffect - Fetch', Component: FetchComponent },
 ]
 
 function AppModule3() {

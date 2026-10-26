@@ -22,3 +22,7 @@
 .module-3 button:disabled {
   cursor: not-allowed;
 }
+
+.module-3 .error {
+  color: #b91c1c;
+}
